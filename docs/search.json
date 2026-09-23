@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "James Hodges",
+    "section": "",
+    "text": "I’m a student at Reed College, currently working on my Quantitative Economics bachelors and Higher Education research. I love to climb, hike, and cycle. I’ll be outside almost every weekend when its nice out, and in the climbing gym every other weekday."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "James Hodges",
+    "section": "Education",
+    "text": "Education\nReed College, Portland Oregon | August 2024 - May 2028"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "James Hodges",
+    "section": "Experience",
+    "text": "Experience\nReed College | Intro Economics Tutor | August 2025 - Present\nReed College | Estate Tax Research Assistant | January 2026\nReed College | Higher Education Research Assistant | June 2026 - Present"
+  },
+  {
+    "objectID": "index.html#awards",
+    "href": "index.html#awards",
+    "title": "James Hodges",
+    "section": "Awards",
+    "text": "Awards\nWinner of Undergraduate Macroeconomics Case Study Competition at PNREC 2026\nBest Data Visualization | DataFest 2026 at Willamette University"
+  },
+  {
+    "objectID": "current_work.html",
+    "href": "current_work.html",
+    "title": "Current Work",
+    "section": "",
+    "text": "Higher Education Research - UT Austin\nThis summer, along with Professor Jon Rork and my classmate Sam Kuo, I have been looking at IPEDS data. After working to wrangle all of into a manageable database, I created a few tools to help visualize and explore the data. As of right now they are still a little bit too rough around the edges for me to publish them, but once I do a little bit of polishing they will be publicly hosted here.\nOut of that exploration, we decided to look at UT Austin around the 2011 legislative change which limited what percentage of the student body could come from the guaranteed acceptance program. In particular, initial plots showed UT Austin as having a changing graduation rate and Pell Grant percentage right around 2015 which is when we would expect to see effects from that shock to really start materializing.\nWe are currently in the process of writing a paper testing the effects of this shock–which our theoretical model hypothesizes would create a more competitive, selective college. Testing this empirically required me to learn about Synthetic Control Models and their cousin Synthetic Differences in Differences Models. This page will be updated as we formalize more of our results and get a better draft of a working paper going throughout this semester."
+  }
+]

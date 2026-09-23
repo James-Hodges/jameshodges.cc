@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "James Hodges"
+  site-url: "https://jameshodges.cc"
+  image: profile.jpg
+  image-alt: "Headshot of James Hodges"
+  search: false
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  page-footer: "Made with ❤️ and Quarto"
+  navbar:
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Current Work
+        href: current_work.qmd
+    tools: 
+      - icon: github
+        text: Github
+        href: https://github.com/James-Hodges
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme:
+      light: flatly
+      dark: [darkly, dark_styles.scss]
+    mainfont: Shippori Mincho

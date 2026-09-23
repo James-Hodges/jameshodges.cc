@@ -1,0 +1,45 @@
+/*-- scss:defaults --*/
+
+/* Quarto and Bootstrap Variables */
+// https://quarto.org/docs/output-formats/html-themes.html#sass-variables
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+// Dark background and light text
+$body-bg: #121212; 
+$body-color: #e0e0e0;
+$primary: #64b5f6; // A softer blue that pops against dark backgrounds
+
+// Navbar: Slightly lighter than the body to create depth
+$navbar-bg: #1e1e1e;
+$navbar-fg: $body-color;
+
+// Code: Darker blocks with subtle contrast
+$code-color: #f8f8f2; 
+$code-block-bg: #272822; 
+$code-bg: rgba($primary, 0.1); // Subtle tint for inline code
+
+/*-- scss:rules --*/
+
+// Navigation styling
+.nav-link.active {
+    color: $primary !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+// Filename headers for code blocks
+.code-with-filename .code-with-filename-file {
+    background-color: #333333;
+    color: $body-color;
+    border-bottom: 1px solid #444;
+}
+
+// Adjust links for readability
+a {
+  color: $primary;
+  &:hover {
+    color: lighten($primary, 15%);
+  }
+}

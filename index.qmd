@@ -1,0 +1,32 @@
+---
+title: "James Hodges"
+subtitle: "Quantitative Economics Major at Reed College"
+about: # https://quarto.org/docs/websites/website-about.html
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/James-Hodges
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/james-hodges-51168a327
+---
+
+I'm a student at Reed College, currently working on my Quantitative Economics bachelors and Higher Education research. I love to climb, hike, and cycle. I'll be outside almost every weekend when its nice out, and in the climbing gym every other weekday. 
+
+## Education
+
+Reed College, Portland Oregon \| August 2024 - May 2028
+
+## Experience
+
+Reed College \| Intro Economics Tutor \| August 2025 - Present
+
+Reed College \| Estate Tax Research Assistant \| January 2026
+
+Reed College \| Higher Education Research Assistant \| June 2026 - Present
+
+## Awards
+Winner of Undergraduate Macroeconomics Case Study Competition at PNREC 2026
+
+Best Data Visualization \| DataFest 2026 at Willamette University
