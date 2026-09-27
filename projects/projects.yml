@@ -46,4 +46,5 @@
   categories: [Python, Flask, React, TypeScript]
   status: active
   links:
+    - {text: Live app, icon: box-arrow-up-right, href: "https://sorcery-web-app-chi.vercel.app/"}
     - {text: GitHub, icon: github, href: "https://github.com/James-Hodges/sorcerydeckassembler"}

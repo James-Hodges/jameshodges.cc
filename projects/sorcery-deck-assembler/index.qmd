@@ -5,6 +5,7 @@ image: thumbnail.png
 ---
 
 ::: {.project-links}
+<a class="btn btn-outline-primary" href="https://sorcery-web-app-chi.vercel.app/"><i class="bi bi-box-arrow-up-right"></i>Live app</a>
 <a class="btn btn-outline-primary" href="https://github.com/James-Hodges/sorcerydeckassembler"><i class="bi bi-github"></i>GitHub</a>
 :::
 
