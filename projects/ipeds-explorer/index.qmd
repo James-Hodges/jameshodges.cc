@@ -1,0 +1,18 @@
+---
+title: "IPEDS Explorer"
+subtitle: "Compare colleges and peer groups across two decades of IPEDS data"
+image: thumbnail.png
+---
+
+::: {.callout-note appearance="simple"}
+**In development.** A general-purpose public version is being built from the research dashboards I made this summer.
+:::
+
+The Integrated Postsecondary Education Data System (IPEDS) holds a huge amount of information about every U.S. college, but it is spread across hundreds of survey files whose variables change from year to year. As part of my research with Professor Jon Rork and Sam Kuo, I built a pipeline that harmonizes those files into consistent institution-by-year panels.
+
+IPEDS Explorer puts that data in front of anyone:
+
+- **Explore**: plot the variables you choose over time for the colleges you choose, against predefined peer pools such as flagships, Power 5 schools and US News top-50 lists
+- **Migration**: map where students from a state enroll, and where a college's students come from
+- **Majors**: the mix of completions by field for the selected colleges
+- **Cohorts**: how a college compares with its peer pool on majors, race and ethnicity, graduation rates and SAT bands

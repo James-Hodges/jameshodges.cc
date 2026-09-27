@@ -1,0 +1,15 @@
+---
+title: "Sorcery Deck Assembler"
+subtitle: "Playtest proxy tool for Sorcery: Contested Realm (archived)"
+image: thumbnail.png
+---
+
+::: {.project-links}
+<a class="btn btn-outline-primary" href="https://github.com/James-Hodges/sorcerydeckassembler"><i class="bi bi-github"></i>GitHub</a>
+:::
+
+A web app for playtesting decks for the trading card game *Sorcery: Contested Realm*. You can import a deck list and check it against your Curiosa collection export to see which cards you own. Cards can be sorted into print buckets, and the app generates print-ready PDF proxy sheets and exports deck lists as text.
+
+The project was also an experiment in building an app almost entirely through AI-assisted coding ("vibe coding"): a Flask API with ReportLab/fpdf2 for PDF generation, a React + TypeScript + Tailwind front end, and Vercel for deployment. It taught me a lot about where that workflow speeds things up and where it quietly piles up debt.
+
+**Status:** no longer maintained. This is a fan-made project, not affiliated with Erik's Curiosa.

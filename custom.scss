@@ -1,0 +1,133 @@
+/*-- scss:defaults --*/
+
+/* Shared by the light and dark themes. Colors come from the active
+   Bootstrap theme so the tiles follow the color scheme. */
+
+/*-- scss:rules --*/
+
+// Project tiles (projects/_tiles.ejs)
+.project-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-tile {
+  border: 1px solid rgba($body-color, 0.15);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  background-color: $body-bg;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
+  }
+
+  .project-tile-thumb {
+    display: block;
+    aspect-ratio: 16 / 10;
+    border-bottom: 1px solid rgba($body-color, 0.1);
+    background-color: rgba($body-color, 0.04);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .card-title {
+    margin: 0;
+    font-size: 1.15rem;
+
+    a {
+      color: $body-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .project-tile-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+
+  .project-tile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .project-tile-tag {
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background-color: rgba($body-color, 0.08);
+  }
+
+  .project-tile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+
+    .bi {
+      margin-right: 0.25rem;
+    }
+  }
+
+  .project-tile-note {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.7;
+  }
+}
+
+.project-status {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  vertical-align: middle;
+  border: 1px solid currentColor;
+
+  &.status-archived {
+    color: rgba($body-color, 0.6);
+  }
+
+  &.status-in-development {
+    color: $primary;
+  }
+}
+
+// Link buttons at the top of each project write-up
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1.5rem;
+
+  .bi {
+    margin-right: 0.3rem;
+  }
+}

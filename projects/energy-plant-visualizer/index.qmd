@@ -1,0 +1,23 @@
+---
+title: "Energy Plant Visualizer"
+subtitle: "Global Energy Tracker: a Shiny dashboard of the world's power plants"
+image: thumbnail.png
+---
+
+*A group project with Tyler Celotta for Data Science at Reed College.*
+
+The Global Energy Tracker is an interactive Quarto dashboard with a Shiny backend. It covers roughly 67,000 power plants and lets users explore how the world's generating capacity has changed over time. Every page shares the same filters (country, energy type, plant capacity and construction year):
+
+- **World map**: every plant, colored by energy type and sized by capacity, with an animated year slider
+- **Country comparison**: side-by-side maps cropped to each chosen country's borders
+- **Area plot**: capacity by type within each country, and a treemap of capacity across countries
+- **Comparison table**: plant counts and capacity grouped by any combination of fields, with CSV download
+- **Stream graph**: how new capacity has grown each year, split by type or any other field
+
+![Stream graph of new generating capacity by energy type, 1950–2026](screenshot-stream.png)
+
+![Treemap of generating capacity by country and energy type](screenshot-capacity.png)
+
+It is built in R with Shiny, leaflet and leafgl, sf, plotly, treemapify and streamgraph. The plant data comes from Global Energy Monitor's *Global Integrated Power Tracker* (CC BY 4.0).
+
+The source code is in a private course repository.
