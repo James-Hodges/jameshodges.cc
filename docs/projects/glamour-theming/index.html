@@ -73,9 +73,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-92eb35214915bb03ad6f706109c214c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-81a002ae2330f174cd635efc6c1f6707.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-92eb35214915bb03ad6f706109c214c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e0085e4dbeda070b84b64c45e3e7e5b1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d606f89dc95e449d6c92cc5a0b72b55e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-e0085e4dbeda070b84b64c45e3e7e5b1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -341,14 +341,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="project-links">
 <p><a class="btn btn-outline-primary" href="https://github.com/James-Hodges/glamourtheming"><i class="bi bi-github"></i>GitHub</a> <a class="btn btn-outline-primary" href="demo.html"><i class="bi bi-images"></i>Examples</a></p>
 </div>
-<p>Default ggplot2 output is legible but noisy: heavy gridlines, a legend the reader has to look back and forth to, and fonts that were never chosen. Glamour is a first attempt at making a cleaner, Tufte-leaning style the easy default. It follows the principles in Will Chase’s talk <em>The Glamour of Graphics</em>: label directly, choose type on purpose, strip the grid back, and use color only when it carries meaning.</p>
+<p>Glamour is a first attempt at making a Tufte-like style easy to apply. Motivated by Will Chase’s talk <em>The Glamour of Graphics</em>, this package helps the user: label directly, choose type on purpose, strip the grid back, and use color only when it carries meaning.</p>
 <p>The package (<code>glamour</code>) provides:</p>
 <ul>
 <li><strong><code>theme_glamour()</code></strong>: a minimal theme with controls for the grid, legend and palette</li>
 <li><strong>Palettes</strong>: <code>glamour_palette()</code>, <code>scale_color_glamour()</code> and <code>scale_fill_glamour()</code>, with light and dark variants</li>
-<li><strong>Direct labeling</strong>: <code>color_label()</code> and <code>color_legend()</code> color words in the title so the legend can go</li>
+<li><strong>Direct labeling</strong>: <code>color_label()</code> and <code>color_legend()</code> color words in the title to replace the need for a legend</li>
 <li><strong>Typography</strong>: <code>load_glamour_fonts()</code> registers Google Fonts through showtext</li>
-<li><strong>Export</strong>: <code>glamour_save()</code> for consistent sizing</li>
+<li><strong>Export</strong>: <code>glamour_save()</code> for consistent sizing on exports</li>
 </ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("remotes")</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"James-Hodges/glamourtheming"</span>)</span>

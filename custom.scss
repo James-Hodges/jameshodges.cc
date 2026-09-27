@@ -3,6 +3,9 @@
 /* Shared by the light and dark themes. Colors come from the active
    Bootstrap theme so the tiles follow the color scheme. */
 
+// Site font (mainfont in _quarto.yml), with a real bold weight
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
 /*-- scss:rules --*/
 
 // Project tiles (projects/_tiles.ejs)

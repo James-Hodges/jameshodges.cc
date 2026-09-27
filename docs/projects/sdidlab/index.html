@@ -38,9 +38,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-92eb35214915bb03ad6f706109c214c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-81a002ae2330f174cd635efc6c1f6707.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-92eb35214915bb03ad6f706109c214c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e0085e4dbeda070b84b64c45e3e7e5b1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d606f89dc95e449d6c92cc5a0b72b55e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-e0085e4dbeda070b84b64c45e3e7e5b1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -313,11 +313,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>For my higher education research, I needed synthetic control and synthetic difference-in-differences (SDID) models with a single treated unit, and I needed to compare dozens of specifications without losing track of which result came from which choices. sdidlab is the workbench I built around the <a href="https://github.com/synth-inference/synthdid">synthdid</a> estimator for that:</p>
+<p>For my higher education research, I needed synthetic control and synthetic difference-in-differences (SDID) models with a single treated unit, and I needed to compare dozens of specifications without losing track of which result came from which choices. <code>sdidlab</code> is a tool I built around the <a href="https://github.com/synth-inference/synthdid">synthdid</a> estimator.</p>
+<p>Features of <code>sdidlab</code>:</p>
 <ul>
 <li><strong>Declarative specifications.</strong> A model is described in YAML (outcome, window, donor pool, covariates) and hashes to a stable identifier.</li>
-<li><strong>A run store.</strong> Every fit is saved with its full fitted object, placebo draws and provenance, so it can be reloaded and re-plotted without refitting.</li>
-<li><strong>Inference for one treated unit.</strong> The jackknife is undefined in that design, so sdidlab provides trimmed placebo inference and RMSPE-ratio p-values instead.</li>
+<li><strong>Stored Runs.</strong> Every fit is saved with its full fitted object, placebo draws and provenance, so it can be reloaded and re-plotted without refitting.</li>
+<li><strong>Inference for one treated unit.</strong> Provides trimmed placebo inference and RMSPE-ratio p-values instead.</li>
 <li><strong>Diagnostics.</strong> Trajectory, donor and time weights, donor influence, placebo distributions, gap paths and event studies, styled after the Stata <code>sdid</code> package.</li>
 <li><strong>Codegen.</strong> A specification can be turned into a runnable, committed R script.</li>
 </ul>
