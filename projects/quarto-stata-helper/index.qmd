@@ -1,0 +1,23 @@
+---
+title: "Quarto Stata Helper"
+subtitle: "A VS Code extension for writing Quarto documents with live Stata code"
+image: thumbnail.png
+---
+
+::: {.project-links}
+<a class="btn btn-outline-primary" href="https://github.com/James-Hodges/quarto-stata-helper"><i class="bi bi-github"></i>GitHub</a>
+<a class="btn btn-outline-primary" href="https://github.com/James-Hodges/quarto-stata-helper/releases/latest"><i class="bi bi-download"></i>Download .vsix</a>
+:::
+
+Quarto is a successor to the RMD file type, especially helpful for economics work letting us write prose, LaTeX math and code in one reproducible document. This extension gets Stata to work with Quarto, wiring together Python, a Jupyter kernel ([nbstata](https://github.com/hugetim/nbstata)), and a few VS Code settings.
+
+Quarto Stata Helper creates a setup wizard that:
+
+- checks that Quarto, Python and Stata are installed
+- finds your Stata installation, including StataNow and Stata 16–18
+- builds an isolated Python environment with nbstata and registers the Jupyter kernel
+- writes the workspace settings and creates a test document to confirm everything works
+
+After that, `{stata}` cells in a `.qmd` file execute using your licensed copy of Stata, and the document renders to HTML, PDF or slides like any other Quarto project.
+
+**Install:** download the `.vsix` from the latest release, then in VS Code open the Extensions panel, choose **⋯ → Install from VSIX**, and run *Quarto Stata Helper: Run Setup Wizard* from the Command Palette.

@@ -1,0 +1,73 @@
+# Tiles on the Projects page, in display order. Read by _tiles.ejs.
+# status: active | archived | in-development
+# links: buttons shown on the tile (icon = a Bootstrap Icons name)
+# In-development tools show a note instead of links; when one launches,
+# set status: active, add its links, and drop the note.
+
+- title: IPEDS Explorer
+  path: ipeds-explorer/index.html
+  image: ipeds-explorer/thumbnail.png
+  description: >-
+    A dashboard for plotting and comparing IPEDS variables across colleges and
+    predefined peer pools: migration, majors, demographics, graduation and
+    admissions.
+  categories: [R, Shiny, Higher education]
+  status: in-development
+  note: Public release coming soon.
+
+- title: sdidlab
+  path: sdidlab/index.html
+  image: sdidlab/thumbnail.png
+  description: >-
+    An R package and workbench for writing, running and comparing synthetic
+    difference-in-differences specifications.
+  categories: [R, Causal inference, Econometrics]
+  status: in-development
+  note: Package, docs and demo app coming soon.
+
+- title: Quarto Stata Helper
+  path: quarto-stata-helper/index.html
+  image: quarto-stata-helper/thumbnail.png
+  description: >-
+    A VS Code extension that sets up a working Quarto + Stata environment in one
+    wizard, so {stata} cells run live in .qmd documents.
+  categories: [TypeScript, VS Code, Stata, Quarto]
+  status: active
+  links:
+    - {text: GitHub, icon: github, href: "https://github.com/James-Hodges/quarto-stata-helper"}
+    - {text: Download, icon: download, href: "https://github.com/James-Hodges/quarto-stata-helper/releases/latest"}
+
+- title: Glamour Theming
+  path: glamour-theming/index.html
+  image: glamour-theming/thumbnail.png
+  description: >-
+    An R package of ggplot2 themes, palettes and type helpers for clean,
+    directly labeled, Tufte-leaning charts.
+  categories: [R, ggplot2, Data viz]
+  status: active
+  links:
+    - {text: GitHub, icon: github, href: "https://github.com/James-Hodges/glamourtheming"}
+    - {text: Examples, icon: images, href: "glamour-theming/demo.html"}
+
+- title: Energy Plant Visualizer
+  path: energy-plant-visualizer/index.html
+  image: energy-plant-visualizer/thumbnail.png
+  description: >-
+    An interactive dashboard mapping the world's power plants over time by fuel
+    type and capacity. Built with Tyler Celotta for Data Science at Reed.
+  categories: [R, Shiny, Quarto, leaflet]
+  status: active
+  links:
+    - {text: Live app, icon: box-arrow-up-right, href: "https://celotta.shinyapps.io/shinyappgrp10/"}
+
+- title: Sorcery Deck Assembler
+  path: sorcery-deck-assembler/index.html
+  image: sorcery-deck-assembler/thumbnail.png
+  description: >-
+    A web app for assembling and printing playtest proxies for the Sorcery:
+    Contested Realm card game. An experiment in AI-assisted development.
+  categories: [Python, Flask, React, TypeScript]
+  status: active
+  links:
+    - {text: Live app, icon: box-arrow-up-right, href: "https://sorcery-web-app-chi.vercel.app/"}
+    - {text: GitHub, icon: github, href: "https://github.com/James-Hodges/sorcerydeckassembler"}

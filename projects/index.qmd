@@ -1,0 +1,13 @@
+---
+title: "Projects"
+subtitle: "Tools, packages and dashboards I've built"
+page-layout: full
+listing:
+  id: projects
+  contents: projects.yml
+  template: _tiles.ejs
+  sort: false
+---
+
+::: {#projects}
+:::

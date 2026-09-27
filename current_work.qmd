@@ -5,7 +5,7 @@ subtitle: "What's keeping me busy lately"
 
 # Higher Education Research - UT Austin
 
-This summer, along with Professor Jon Rork and my classmate Sam Kuo, I have been looking at IPEDS data. After working to wrangle all of into a manageable database, I created a few tools to help visualize and explore the data. As of right now they are still a little bit too rough around the edges for me to publish them, but once I do a little bit of polishing they will be publicly hosted here. 
+This summer, along with Professor Jon Rork and my classmate Sam Kuo, I have been looking at IPEDS data. After working to wrangle all of into a manageable database, I created a few tools to help visualize and explore the data. I'm now turning them into general-purpose public tools: see IPEDS Explorer and sdidlab on my [Projects](projects/index.qmd) page. 
 
 Out of that exploration, we decided to look at UT Austin around the 2011 legislative change which limited what percentage of the student body could come from the guaranteed acceptance program. In particular, initial plots showed UT Austin as having a changing graduation rate and Pell Grant percentage right around 2015 which is when we would expect to see effects from that shock to really start materializing. 
 

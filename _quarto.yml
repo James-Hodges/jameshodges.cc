@@ -14,6 +14,8 @@ website:
     right:
       - text: Home
         href: index.qmd
+      - text: Projects
+        href: projects/index.qmd
       - text: Current Work
         href: current_work.qmd
     tools: 
@@ -25,6 +27,6 @@ format:
   html:
     respect-user-color-scheme: true
     theme:
-      light: flatly
-      dark: [darkly, dark_styles.scss]
+      light: [flatly, custom.scss]
+      dark: [darkly, dark_styles.scss, custom.scss]
     mainfont: Shippori Mincho

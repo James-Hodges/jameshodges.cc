@@ -1,0 +1,42 @@
+```{=html}
+<div class="project-tiles">
+<% for (const item of items) {
+     const href = item.path;
+     const status = item.status || 'active';
+     const statusLabel = { archived: 'Archived', 'in-development': 'In development' }[status];
+%>
+  <div class="project-tile-cell">
+    <div class="project-tile card h-100">
+      <% if (item.image) { %>
+      <a class="project-tile-thumb" href="<%- href %>" tabindex="-1" aria-hidden="true">
+        <img src="<%- item.image %>" alt="<%= item['image-alt'] || item.title %>" loading="lazy">
+      </a>
+      <% } %>
+      <div class="card-body">
+        <h3 class="card-title no-anchor">
+          <a href="<%- href %>"><%= item.title %></a>
+          <% if (statusLabel) { %><span class="project-status status-<%= status %>"><%= statusLabel %></span><% } %>
+        </h3>
+        <p class="project-tile-desc"><%= item.description %></p>
+        <% if (item.categories && item.categories.length) { %>
+        <div class="project-tile-tags">
+          <% for (const cat of item.categories) { %><span class="project-tile-tag"><%= cat %></span><% } %>
+        </div>
+        <% } %>
+        <% if (item.links && item.links.length) { %>
+        <div class="project-tile-links">
+          <% for (const link of item.links) { %>
+          <a class="btn btn-sm btn-outline-primary" href="<%- link.href %>"<% if (/^https?:/.test(link.href)) { %> target="_blank" rel="noopener"<% } %>>
+            <% if (link.icon) { %><i class="bi bi-<%= link.icon %>" aria-hidden="true"></i><% } %><%= link.text %>
+          </a>
+          <% } %>
+        </div>
+        <% } else if (item.note) { %>
+        <div class="project-tile-note"><%= item.note %></div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+<% } %>
+</div>
+```
