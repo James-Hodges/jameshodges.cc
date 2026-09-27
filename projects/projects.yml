@@ -58,7 +58,7 @@
   categories: [R, Shiny, Quarto, leaflet]
   status: active
   links:
-    - {text: Read more, icon: journal-text, href: "energy-plant-visualizer/index.html"}
+    - {text: Live app, icon: box-arrow-up-right, href: "https://celotta.shinyapps.io/shinyappgrp10/"}
 
 - title: Sorcery Deck Assembler
   path: sorcery-deck-assembler/index.html

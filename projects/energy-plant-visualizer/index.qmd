@@ -4,6 +4,10 @@ subtitle: "Global Energy Tracker: a Shiny dashboard of the world's power plants"
 image: thumbnail.png
 ---
 
+::: {.project-links}
+<a class="btn btn-outline-primary" href="https://celotta.shinyapps.io/shinyappgrp10/"><i class="bi bi-box-arrow-up-right"></i>Live app</a>
+:::
+
 *A group project with Tyler Celotta for Data Science at Reed College.*
 
 The Global Energy Tracker is an interactive Quarto dashboard with a Shiny backend. It covers roughly 67,000 power plants and lets users explore how the world's generating capacity has changed over time. Every page shares the same filters (country, energy type, plant capacity and construction year):
