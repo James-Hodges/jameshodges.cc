@@ -1,24 +1,13 @@
 ---
 title: "Projects"
 subtitle: "Tools, packages and dashboards I've built"
+page-layout: full
 listing:
-  - id: projects
-    contents: projects.yml
-    template: _tiles.ejs
-    sort: false
-  - id: in-development
-    contents: in-development.yml
-    template: _tiles.ejs
-    sort: false
+  id: projects
+  contents: projects.yml
+  template: _tiles.ejs
+  sort: false
 ---
 
-::: {#projects .column-page}
-:::
-
-## In development
-
-These tools grew out of my higher education research and are being cleaned up
-into general-purpose, public versions.
-
-::: {#in-development .column-page}
+::: {#projects}
 :::

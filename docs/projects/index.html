@@ -68,41 +68,13 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-image','listing-description','listing-categories','listing-status','listing-links',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-image','listing-description','listing-categories','listing-status','listing-note','listing-links',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-image","listing-description","listing-categories","listing-status","listing-links"],
+      searchColumns: ["listing-title","listing-image","listing-description","listing-categories","listing-status","listing-note","listing-links"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-in-development .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-image','listing-description','listing-categories','listing-status','listing-note',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-image","listing-description","listing-categories","listing-status","listing-note"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-in-development'] = new List('listing-in-development', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -148,14 +120,14 @@ window.Quarto = {
 
 <meta property="og:title" content="Projects – James Hodges">
 <meta property="og:description" content="Tools, packages and dashboards I’ve built">
-<meta property="og:image" content="https://jameshodges.cc/projects/quarto-stata-helper/thumbnail.png">
+<meta property="og:image" content="https://jameshodges.cc/projects/ipeds-explorer/thumbnail.png">
 <meta property="og:site_name" content="James Hodges">
-<meta property="og:image:alt" content="Quarto Stata Helper">
-<meta property="og:image:height" content="750">
+<meta property="og:image:alt" content="IPEDS Explorer">
+<meta property="og:image:height" content="708">
 <meta property="og:image:width" content="1200">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -364,12 +336,12 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -380,7 +352,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -392,8 +364,58 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-projects" class="column-page quarto-listing quarto-listing-container-custom">
+<div id="listing-projects" class="quarto-listing quarto-listing-container-custom">
 <div class="project-tiles">
+
+  <div class="project-tile-cell">
+    <div class="project-tile card h-100">
+      
+      <a class="project-tile-thumb" href="ipeds-explorer/index.html" tabindex="-1" aria-hidden="true">
+        <img src="ipeds-explorer/thumbnail.png" alt="IPEDS Explorer" loading="lazy">
+      </a>
+      
+      <div class="card-body">
+        <h3 class="card-title no-anchor">
+          <a href="ipeds-explorer/index.html">IPEDS Explorer</a>
+          <span class="project-status status-in-development">In development</span>
+        </h3>
+        <p class="project-tile-desc">A dashboard for plotting and comparing IPEDS variables across colleges and predefined peer pools: migration, majors, demographics, graduation and admissions.</p>
+        
+        <div class="project-tile-tags">
+          <span class="project-tile-tag">R</span><span class="project-tile-tag">Shiny</span><span class="project-tile-tag">Higher education</span>
+        </div>
+        
+        
+        <div class="project-tile-note">Public release coming soon.</div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="project-tile-cell">
+    <div class="project-tile card h-100">
+      
+      <a class="project-tile-thumb" href="sdidlab/index.html" tabindex="-1" aria-hidden="true">
+        <img src="sdidlab/thumbnail.png" alt="sdidlab" loading="lazy">
+      </a>
+      
+      <div class="card-body">
+        <h3 class="card-title no-anchor">
+          <a href="sdidlab/index.html">sdidlab</a>
+          <span class="project-status status-in-development">In development</span>
+        </h3>
+        <p class="project-tile-desc">An R package and workbench for writing, running and comparing synthetic difference-in-differences specifications.</p>
+        
+        <div class="project-tile-tags">
+          <span class="project-tile-tag">R</span><span class="project-tile-tag">Causal inference</span><span class="project-tile-tag">Econometrics</span>
+        </div>
+        
+        
+        <div class="project-tile-note">Package, docs and demo app coming soon.</div>
+        
+      </div>
+    </div>
+  </div>
 
   <div class="project-tile-cell">
     <div class="project-tile card h-100">
@@ -534,69 +556,9 @@ window.Quarto = {
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<section id="in-development" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="in-development">In development</h2>
-<p>These tools grew out of my higher education research and are being cleaned up into general-purpose, public versions.</p>
-<div id="listing-in-development" class="column-page quarto-listing quarto-listing-container-custom">
-<div class="project-tiles">
-
-  <div class="project-tile-cell">
-    <div class="project-tile card h-100">
-      
-      <a class="project-tile-thumb" href="ipeds-explorer/index.html" tabindex="-1" aria-hidden="true">
-        <img src="ipeds-explorer/thumbnail.png" alt="IPEDS Explorer" loading="lazy">
-      </a>
-      
-      <div class="card-body">
-        <h3 class="card-title no-anchor">
-          <a href="ipeds-explorer/index.html">IPEDS Explorer</a>
-          <span class="project-status status-in-development">In development</span>
-        </h3>
-        <p class="project-tile-desc">A dashboard for plotting and comparing IPEDS variables across colleges and predefined peer pools: migration, majors, demographics, graduation and admissions.</p>
-        
-        <div class="project-tile-tags">
-          <span class="project-tile-tag">R</span><span class="project-tile-tag">Shiny</span><span class="project-tile-tag">Higher education</span>
-        </div>
-        
-        
-        <div class="project-tile-note">Public release coming soon.</div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="project-tile-cell">
-    <div class="project-tile card h-100">
-      
-      <a class="project-tile-thumb" href="sdidlab/index.html" tabindex="-1" aria-hidden="true">
-        <img src="sdidlab/thumbnail.png" alt="sdidlab" loading="lazy">
-      </a>
-      
-      <div class="card-body">
-        <h3 class="card-title no-anchor">
-          <a href="sdidlab/index.html">sdidlab</a>
-          <span class="project-status status-in-development">In development</span>
-        </h3>
-        <p class="project-tile-desc">An R package and workbench for writing, running and comparing synthetic difference-in-differences specifications.</p>
-        
-        <div class="project-tile-tags">
-          <span class="project-tile-tag">R</span><span class="project-tile-tag">Causal inference</span><span class="project-tile-tag">Econometrics</span>
-        </div>
-        
-        
-        <div class="project-tile-note">Package, docs and demo app coming soon.</div>
-        
-      </div>
-    </div>
-  </div>
-
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

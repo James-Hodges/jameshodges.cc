@@ -1,6 +1,29 @@
 # Tiles on the Projects page, in display order. Read by _tiles.ejs.
 # status: active | archived | in-development
 # links: buttons shown on the tile (icon = a Bootstrap Icons name)
+# In-development tools show a note instead of links; when one launches,
+# set status: active, add its links, and drop the note.
+
+- title: IPEDS Explorer
+  path: ipeds-explorer/index.html
+  image: ipeds-explorer/thumbnail.png
+  description: >-
+    A dashboard for plotting and comparing IPEDS variables across colleges and
+    predefined peer pools: migration, majors, demographics, graduation and
+    admissions.
+  categories: [R, Shiny, Higher education]
+  status: in-development
+  note: Public release coming soon.
+
+- title: sdidlab
+  path: sdidlab/index.html
+  image: sdidlab/thumbnail.png
+  description: >-
+    An R package and workbench for writing, running and comparing synthetic
+    difference-in-differences specifications.
+  categories: [R, Causal inference, Econometrics]
+  status: in-development
+  note: Package, docs and demo app coming soon.
 
 - title: Quarto Stata Helper
   path: quarto-stata-helper/index.html
