@@ -44,6 +44,6 @@
     A web app for assembling and printing playtest proxies for the Sorcery:
     Contested Realm card game. An experiment in AI-assisted development.
   categories: [Python, Flask, React, TypeScript]
-  status: archived
+  status: active
   links:
     - {text: GitHub, icon: github, href: "https://github.com/James-Hodges/sorcerydeckassembler"}

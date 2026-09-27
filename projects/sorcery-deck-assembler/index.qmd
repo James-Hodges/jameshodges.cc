@@ -1,6 +1,6 @@
 ---
 title: "Sorcery Deck Assembler"
-subtitle: "Playtest proxy tool for Sorcery: Contested Realm (archived)"
+subtitle: "Playtest proxy tool for Sorcery: Contested Realm"
 image: thumbnail.png
 ---
 
@@ -8,8 +8,8 @@ image: thumbnail.png
 <a class="btn btn-outline-primary" href="https://github.com/James-Hodges/sorcerydeckassembler"><i class="bi bi-github"></i>GitHub</a>
 :::
 
-A web app for playtesting decks for the trading card game *Sorcery: Contested Realm*. You can import a deck list and check it against your Curiosa collection export to see which cards you own. Cards can be sorted into print buckets, and the app generates print-ready PDF proxy sheets and exports deck lists as text.
+A web app for creating playtest decks to print for the trading card game *Sorcery: Contested Realm*. You can import a deck list and check it against your Curiosa collection export to see which cards you own. Cards can be sorted into print buckets, and the app generates print-ready PDF sheets and exports deck lists as text.
 
-The project was also an experiment in building an app almost entirely through AI-assisted coding ("vibe coding"): a Flask API with ReportLab/fpdf2 for PDF generation, a React + TypeScript + Tailwind front end, and Vercel for deployment. It taught me a lot about where that workflow speeds things up and where it quietly piles up debt.
+The project was a winter break experiment in building an app almost entirely through vibe coding to see what it felt like in a lowstakes environment. The structure: a Flask API with ReportLab/fpdf2 for PDF generation, a React + TypeScript + Tailwind front end, and Vercel for deployment. 
 
-**Status:** no longer maintained. This is a fan-made project, not affiliated with Erik's Curiosa.
+Note: This is a fan-made project, not affiliated with Erik's Curiosa.

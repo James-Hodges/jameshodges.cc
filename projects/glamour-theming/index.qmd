@@ -11,15 +11,15 @@ resources:
 <a class="btn btn-outline-primary" href="demo.html"><i class="bi bi-images"></i>Examples</a>
 :::
 
-Default ggplot2 output is legible but noisy: heavy gridlines, a legend the reader has to look back and forth to, and fonts that were never chosen. Glamour is a first attempt at making a cleaner, Tufte-leaning style the easy default. It follows the principles in Will Chase's talk *The Glamour of Graphics*: label directly, choose type on purpose, strip the grid back, and use color only when it carries meaning.
+Glamour is a first attempt at making a Tufte-like style easy to apply. Motivated by Will Chase's talk *The Glamour of Graphics*, this package helps the user: label directly, choose type on purpose, strip the grid back, and use color only when it carries meaning.
 
 The package (`glamour`) provides:
 
 - **`theme_glamour()`**: a minimal theme with controls for the grid, legend and palette
 - **Palettes**: `glamour_palette()`, `scale_color_glamour()` and `scale_fill_glamour()`, with light and dark variants
-- **Direct labeling**: `color_label()` and `color_legend()` color words in the title so the legend can go
+- **Direct labeling**: `color_label()` and `color_legend()` color words in the title to replace the need for a legend
 - **Typography**: `load_glamour_fonts()` registers Google Fonts through showtext
-- **Export**: `glamour_save()` for consistent sizing
+- **Export**: `glamour_save()` for consistent sizing on exports
 
 ```r
 # install.packages("remotes")

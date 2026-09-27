@@ -8,11 +8,13 @@ image: thumbnail.png
 **In development.** The package, documentation and a hosted demo app are being prepared for public release.
 :::
 
-For my higher education research, I needed synthetic control and synthetic difference-in-differences (SDID) models with a single treated unit, and I needed to compare dozens of specifications without losing track of which result came from which choices. sdidlab is the workbench I built around the [synthdid](https://github.com/synth-inference/synthdid) estimator for that:
+For my higher education research, I needed synthetic control and synthetic difference-in-differences (SDID) models with a single treated unit, and I needed to compare dozens of specifications without losing track of which result came from which choices. `sdidlab` is a tool I built around the [synthdid](https://github.com/synth-inference/synthdid) estimator.
+
+Features of `sdidlab`:
 
 - **Declarative specifications.** A model is described in YAML (outcome, window, donor pool, covariates) and hashes to a stable identifier.
-- **A run store.** Every fit is saved with its full fitted object, placebo draws and provenance, so it can be reloaded and re-plotted without refitting.
-- **Inference for one treated unit.** The jackknife is undefined in that design, so sdidlab provides trimmed placebo inference and RMSPE-ratio p-values instead.
+- **Stored Runs.** Every fit is saved with its full fitted object, placebo draws and provenance, so it can be reloaded and re-plotted without refitting.
+- **Inference for one treated unit.** Provides trimmed placebo inference and RMSPE-ratio p-values instead.
 - **Diagnostics.** Trajectory, donor and time weights, donor influence, placebo distributions, gap paths and event studies, styled after the Stata `sdid` package.
 - **Codegen.** A specification can be turned into a runnable, committed R script.
 
