@@ -303,15 +303,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><strong>In development.</strong> The package, documentation and a hosted demo app are being prepared for public release.</p>
-</div>
-</div>
+<div class="project-links">
+<p><a class="btn btn-outline-primary" href="https://github.com/James-Hodges/sdidlab"><i class="bi bi-github"></i>GitHub</a> <a class="btn btn-outline-primary" href="https://james-hodges.github.io/sdidlab/"><i class="bi bi-book"></i>Docs</a> <a class="btn btn-outline-primary" href="https://lhi5zd-james-h.shinyapps.io/sdidlab-demo/"><i class="bi bi-box-arrow-up-right"></i>Live demo</a></p>
 </div>
 <p>For my higher education research, I needed synthetic control and synthetic difference-in-differences (SDID) models with a single treated unit, and I needed to compare dozens of specifications without losing track of which result came from which choices. <code>sdidlab</code> is a tool I built around the <a href="https://github.com/synth-inference/synthdid">synthdid</a> estimator.</p>
 <p>Features of <code>sdidlab</code>:</p>
@@ -322,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Diagnostics.</strong> Trajectory, donor and time weights, donor influence, placebo distributions, gap paths and event studies, styled after the Stata <code>sdid</code> package.</li>
 <li><strong>Codegen.</strong> A specification can be turned into a runnable, committed R script.</li>
 </ul>
-<p>The public release will include a demo app built on the California Proposition 99 data, where you can build a specification and download it as YAML plus an R script.</p>
+<p>The <a href="https://lhi5zd-james-h.shinyapps.io/sdidlab-demo/">live demo</a> runs on the California Proposition 99 data or your own CSV: build a specification, inspect every diagnostic, compare fits, and download the specification as YAML plus an R script that reproduces it. Point estimates, weights and untrimmed placebo standard errors match synthdid exactly, and the test suite enforces it.</p>
 
 
 

@@ -22,8 +22,11 @@
     An R package and workbench for writing, running and comparing synthetic
     difference-in-differences specifications.
   categories: [R, Causal inference, Econometrics]
-  status: in-development
-  note: Package, docs and demo app coming soon.
+  status: active
+  links:
+    - {text: GitHub, icon: github, href: "https://github.com/James-Hodges/sdidlab"}
+    - {text: Docs, icon: book, href: "https://james-hodges.github.io/sdidlab/"}
+    - {text: Live demo, icon: box-arrow-up-right, href: "https://lhi5zd-james-h.shinyapps.io/sdidlab-demo/"}
 
 - title: Quarto Stata Helper
   path: quarto-stata-helper/index.html
